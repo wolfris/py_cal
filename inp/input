@@ -1,0 +1,59 @@
+
+# Types of BC, one for each group of lines (same order as in mesh file). Type 1
+corresponds to an imposed heat flux, and type 2 corresponds to a boundary value
+for the temperature.
+
+BCT = 1,1,1
+
+
+
+# Values for the BC. If type 1 and the corresponding heat transfer coefficient
+is different from 0, it corresponds to the external temperature (assuming a
+convective heat flux). If type 1 and the correspoding heat transfer coefficient
+is 0, then it corresponds to the value of the heat flux (in W). For adiabatic
+boundaries, specify 0.0. If type 2, it is the value of the temperature.
+
+BC = 360.0,0.0,360.0
+
+
+
+# Initial temperature (K) in the field.
+
+T0 = 300.0
+
+
+
+# Heat transfer coefficients (W/m2K). One must be provided for each BC. If the
+BC is type 2, its value is not important. If the BC is type 1 with fixed heat
+flux, its value should be 0.0.
+
+h_coeffs = 210.0,0.0,210.0
+
+
+
+# Simulation time (s)
+
+t_total = 500.0
+
+
+
+# Time step
+dt = 100.
+
+
+
+# Conductivity (W/mK)
+
+k_cond = 385.0
+
+
+
+# Density (kg/m3)
+
+rho = 800.0
+
+
+
+# Heat capacity (J/kgK)
+
+cp = 2100.0
